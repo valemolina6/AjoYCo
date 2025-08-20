@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AAD8C484-EBAD-44D4-B9A7-0F540DC4024F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Molina.Valentina_TPI_PP1</RootNamespace>
+    <AssemblyName>Molina.Valentina_TPI_PP1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.3351.48, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.3351.48\lib\net462\Microsoft.Web.WebView2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.3351.48, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.3351.48\lib\net462\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.3351.48, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.3351.48\lib\net462\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsCliente.cs" />
+    <Compile Include="clsProductos.cs" />
+    <Compile Include="clsVentas.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcercaDe.Designer.cs">
+      <DependentUpon>frmAcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCargarVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargarVenta.Designer.cs">
+      <DependentUpon>frmCargarVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarStock.Designer.cs">
+      <DependentUpon>frmConsultarStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaVenta.Designer.cs">
+      <DependentUpon>frmConsultaVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAñadirNuevoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAñadirNuevoProducto.Designer.cs">
+      <DependentUpon>frmAñadirNuevoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatosLocal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosLocal.Designer.cs">
+      <DependentUpon>frmDatosLocal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenerarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenerarFactura.Designer.cs">
+      <DependentUpon>frmGenerarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGraficos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGraficos.Designer.cs">
+      <DependentUpon>frmGraficos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGraficosXFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGraficosXFecha.Designer.cs">
+      <DependentUpon>frmGraficosXFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInstagram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInstagram.Designer.cs">
+      <DependentUpon>frmInstagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificarStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarStock.Designer.cs">
+      <DependentUpon>frmModificarStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevoCliente.Designer.cs">
+      <DependentUpon>frmNuevoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUbicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUbicacion.Designer.cs">
+      <DependentUpon>frmUbicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWpp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWpp.Designer.cs">
+      <DependentUpon>frmWpp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcercaDe.resx">
+      <DependentUpon>frmAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCargarVenta.resx">
+      <DependentUpon>frmCargarVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarStock.resx">
+      <DependentUpon>frmConsultarStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaVenta.resx">
+      <DependentUpon>frmConsultaVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAñadirNuevoProducto.resx">
+      <DependentUpon>frmAñadirNuevoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosLocal.resx">
+      <DependentUpon>frmDatosLocal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenerarFactura.resx">
+      <DependentUpon>frmGenerarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGraficos.resx">
+      <DependentUpon>frmGraficos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGraficosXFecha.resx">
+      <DependentUpon>frmGraficosXFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInstagram.resx">
+      <DependentUpon>frmInstagram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarStock.resx">
+      <DependentUpon>frmModificarStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoCliente.resx">
+      <DependentUpon>frmNuevoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUbicacion.resx">
+      <DependentUpon>frmUbicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWpp.resx">
+      <DependentUpon>frmWpp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image 28 jul 2025, 11_09_37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image 28 jul 2025, 11_16_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image 28 jul 2025, 11_27_37.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.3351.48\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.3351.48\build\Microsoft.Web.WebView2.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.3351.48\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.3351.48\build\Microsoft.Web.WebView2.targets'))" />
+  </Target>
+</Project>
