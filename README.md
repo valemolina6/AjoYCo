@@ -89,3 +89,9 @@ Incluye dos integraciones con APIs externas para mayor interactividad:
   - Todos los datos cargados  
   - Datos filtrados por fecha o producto  
 
+---
+
+## 👩‍💻 Autora
+**Valentina Molina**  
+📍 Córdoba, Argentina  
+🔗 [LinkedIn](https://www.linkedin.com/in/valentinamolina)  
